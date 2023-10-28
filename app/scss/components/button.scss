@@ -1,0 +1,16 @@
+@use "../global"as *;
+
+.login-page {
+  &__create-button {
+    text-align: start;
+    button {
+      background-color: var(--rich-black);
+      color: var(--white);
+      border-radius: 7px;
+      border: none;
+      width: 17rem;
+      height: 3.5rem;
+      font-size: 1rem;
+    }
+  }
+}

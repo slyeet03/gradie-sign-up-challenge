@@ -6,7 +6,6 @@ body {
   main {
     display: flex;
     flex-direction: row;
-    height: (100vh)/2;
     @include query(mobile) {
       flex-direction: column;
       height: 50%;
