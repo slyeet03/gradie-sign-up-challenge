@@ -1,3 +1,6 @@
+@use "../global"as *;
+@use "../util"as *;
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -10,6 +13,10 @@ fieldset {
   align-items: start;
   text-align: start;
   padding: 2rem 3rem;
+  @include queryMin(desktop) {
+    height: 63vh;
+    width: 40vw;
+  }
   .header {
     padding-bottom: 1rem;
   }

@@ -15,8 +15,9 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: var(--font-roboto);
-  @include query(mobile) {
+  @include queryMax(mobile) {
     background: none;
   }
   background-image: url("/images/Background.png");
+  background-size: 150%;
 }

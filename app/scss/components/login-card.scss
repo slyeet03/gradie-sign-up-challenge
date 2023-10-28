@@ -1,10 +1,12 @@
 @use "../global"as *;
+@use "../util"as *;
 
 fieldset {
   border: none;
 }
 
 .login-page {
+  background-color: var(--white);
   .header {
     &__title {
       font-size: 2rem;

@@ -6,15 +6,31 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  @include queryMax(mobile) {
+    width: 100vw;
+  }
+  @include queryMin(desktop) {
+    width: 40vw;
+  }
   &__header {
     padding-top: 3rem;
     padding-bottom: 5rem;
   }
   &__image {
-    max-height: 45vh;
-    img {
+    @include queryMax(mobile) {
+      max-height: 45vh;
+      img {
+        height: 45vh;
+        width: 83vw;
+      }
+    }
+    @include queryMin(desktop) {
       height: 45vh;
-      width: 83vw;
+      img {
+        height: 45vh;
+        width: 33vw;
+      }
     }
   }
 }

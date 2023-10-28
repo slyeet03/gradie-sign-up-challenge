@@ -3,10 +3,18 @@
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   main {
     display: flex;
     flex-direction: row;
-    @include query(mobile) {
+    justify-content: center;
+    align-items: center;
+    @include queryMin(desktop) {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    @include queryMax(mobile) {
       flex-direction: column;
       height: 50%;
     }
