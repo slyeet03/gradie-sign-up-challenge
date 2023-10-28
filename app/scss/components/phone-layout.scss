@@ -5,17 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //flex-basis: (100%)/2;
+  text-align: center;
   &__header {
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 5rem;
-    .htitle {
-    }
   }
   &__image {
     img {
-      height: 40vh;
-      width: 80vw;
+      height: 45vh;
+      width: 83vw;
     }
   }
 }

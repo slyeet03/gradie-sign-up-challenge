@@ -21,11 +21,10 @@
         <header class="header">
           <span class="header__title">Login</span>
         </header>
-        <div class="main">
           <fieldset>
-            <div class="main__cred">
+            <div class="cred">
               <div class="cred__email">
-                <label class="lemail">Email</label><br />
+                <label class="lemail"><span>Email</span></label><br />
                 <input
                   class="temail"
                   type="email"
@@ -33,7 +32,7 @@
                 />
               </div>
               <div class="cred__pass">
-                <label class="lpass">Password</label><br />
+                <label class="lpass"><span>Password</span></label><br />
                 <input
                   class="tpass"
                   type="password"
@@ -41,14 +40,17 @@
                 />
               </div>
             </div>
-          <div class="main__t-c">
+          <div class="login-page__t-c">
+            <div class="check">
             <input type="checkbox" id="t-c" name="terms-and-conditions" />
-            <label class="lt-c" for="t-c">By creating an account, you agree to the <span class="tc"><a href="">Terms & Conditions.</a> </span></span></label>
           </div>
-          <div class="main__create-button">
-            <button class="bcreate"><span class=btext>Create and Account</span></button>
+          <div class="txt">
+            By creating an account, you agree to the <a href="">Terms & Conditions.</a> </span></span></label>
           </div>
         </div>
+          <div class="login-page__create-button">
+            <button class="bcreate"><span class=btext>Create and Account</span></button>
+          </div>
       </fieldset>
     </div>
       </div>

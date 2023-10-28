@@ -1,0 +1,29 @@
+@use "../global"as *;
+
+fieldset {
+  border: none;
+}
+
+.login-page {
+  .header {
+    &__title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  .cred {
+    label {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    input {
+      background-color: var(--white);
+      border-radius: 7px;
+      font-size: medium;
+      border: none;
+      outline: solid;
+      outline-width: 1px;
+      outline-color: var(--grey);
+    }
+  }
+}

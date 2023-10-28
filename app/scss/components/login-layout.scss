@@ -1,0 +1,30 @@
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  padding: 2rem 3rem;
+  .header {
+    padding-bottom: 1rem;
+  }
+  .cred {
+    &__email {
+      padding-bottom: 1rem;
+    }
+    label {
+      line-height: 2.5rem;
+    }
+    input {
+      display: block;
+      height: 3.5rem;
+      width: 17rem;
+      padding-left: 1rem;
+    }
+  }
+}

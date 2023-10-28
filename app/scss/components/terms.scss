@@ -1,0 +1,53 @@
+@use "../global"as *;
+
+.login-page {
+  &__t-c {
+    padding: 1.5rem 0.1rem;
+    display: flex;
+    flex-direction: row;
+    .txt {
+      padding-left: 5px;
+      font-size: 1.1rem;
+      a {
+        color: var(--rich-black);
+        font-weight: 700;
+      }
+    }
+    .check {
+      padding-right: 3px;
+      input[type="checkbox"] {
+        appearance: none;
+        background-color: var(--white);
+        margin: 0;
+        font: inherit;
+        width: 1.15em;
+        height: 1.15em;
+        border: 1px solid var(--grey);
+        border-radius: 4.5px;
+        transform: translateY(-0.075em);
+        display: grid;
+        place-content: center;
+        &::before {
+          content: "";
+          width: 0.65em;
+          height: 0.65em;
+          transform: scale(0);
+          transition: 120ms transform ease-in-out;
+          box-shadow: inset 1em 1em var(--rich-black);
+        }
+        &:checked::before {
+          transform: scale(1);
+          transform-origin: bottom left;
+          clip-path: polygon(
+            14% 44%,
+            0 65%,
+            50% 100%,
+            100% 16%,
+            80% 0%,
+            43% 62%
+          );
+        }
+      }
+    }
+  }
+}

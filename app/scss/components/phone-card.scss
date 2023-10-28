@@ -1,3 +1,5 @@
+@use "../global"as *;
+
 .phone {
   background-color: var(--rich-black);
   &__header {
@@ -6,7 +8,8 @@
       font-size: 3rem;
       font-weight: bold;
     }
-  }
-  &__image {
+    .htext {
+      color: var(--cyan);
+    }
   }
 }
