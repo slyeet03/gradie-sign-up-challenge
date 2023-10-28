@@ -1,0 +1,15 @@
+@use "../util"as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  main {
+    display: flex;
+    flex-direction: row;
+    height: (100vh)/2;
+    @include query(mobile) {
+      flex-direction: column;
+      height: 50%;
+    }
+  }
+}

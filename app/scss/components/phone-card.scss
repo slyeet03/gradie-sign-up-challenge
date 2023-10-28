@@ -1,0 +1,12 @@
+.phone {
+  background-color: var(--rich-black);
+  &__header {
+    color: var(--white);
+    .htitle {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+  &__image {
+  }
+}

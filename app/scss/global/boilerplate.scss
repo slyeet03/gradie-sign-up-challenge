@@ -1,0 +1,22 @@
+@use "../util"as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-roboto);
+  @media screen and (max-width: 360px) {
+    background: none;
+  }
+  background-image: url("/images/Background.png");
+}
