@@ -5,18 +5,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  main {
+  .wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    @include queryMin(desktop) {
-      overflow: hidden;
-      border-radius: 10px;
-    }
-    @include queryMax(mobile) {
-      flex-direction: column;
-      height: 50%;
+    overflow: hidden;
+    flex-direction: column;
+    height: 50%;
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      margin: auto;
+      max-width: 100vh;
+      max-height: 100vh;
+      border-radius: 13px;
     }
   }
 }
