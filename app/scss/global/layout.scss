@@ -1,23 +1,27 @@
 @use "../util"as *;
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
+  align-content: center;
   align-items: center;
+  @include breakpoint(desktop) {
+    text-align: center;
+    height: 100vh;
+  }
+  min-width: fit-content;
   .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     overflow: hidden;
-    flex-direction: column;
-    height: 50%;
+    @include breakpoint(mobile) {
+      grid-template-rows: repeat(2, 1fr);
+    }
     @include breakpoint(desktop) {
-      flex-direction: row;
       margin: auto;
-      max-width: 100vh;
-      max-height: 100vh;
-      border-radius: 13px;
+      border-radius: 17px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: 52%;
+      height: 67vh;
     }
   }
 }

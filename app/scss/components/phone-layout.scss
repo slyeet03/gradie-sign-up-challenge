@@ -1,29 +1,37 @@
 @use "../util"as *;
 
 .phone {
-  order: 1;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
-  width: 100vw;
   @include breakpoint(desktop) {
+    grid-column: 1;
+  }
+  @include breakpoint(mobile) {
+    grid-row: 1;
   }
   &__header {
+    text-align: center;
     padding-top: 3rem;
     padding-bottom: 5rem;
   }
   &__image {
-    max-height: 45vh;
+    @include breakpoint(mobile) {
+      max-height: 45vh;
+    }
     @include breakpoint(desktop) {
-      max-height: fit-content;
+      height: 100%;
     }
     img {
-      height: 45vh;
-      width: 83vw;
       @include breakpoint(desktop) {
+        height: 100%;
+        width: 70%;
+      }
+      @include breakpoint(mobile) {
+        height: 45vh;
+        width: 83vw;
       }
     }
   }
